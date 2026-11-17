@@ -1,0 +1,17 @@
+test_all_sizes_and_flatten (test_main.SimulatorTests.test_all_sizes_and_flatten) ... ok
+test_benchmark (test_main.SimulatorTests.test_benchmark) ... ok
+test_epsilon (test_main.SimulatorTests.test_epsilon) ... ok
+test_filter_error_continuation (test_main.SimulatorTests.test_filter_error_continuation) ... ok
+test_interactive_retry (test_main.SimulatorTests.test_interactive_retry) ... ok
+test_invalid_case_continuation (test_main.SimulatorTests.test_invalid_case_continuation) ... ok
+test_labels (test_main.SimulatorTests.test_labels) ... ok
+test_mac_reference (test_main.SimulatorTests.test_mac_reference) ... ok
+test_matrix_validation (test_main.SimulatorTests.test_matrix_validation) ... ok
+test_missing_file_and_malformed_json (test_main.SimulatorTests.test_missing_file_and_malformed_json) ... ok
+test_numeric_overflow (test_main.SimulatorTests.test_numeric_overflow) ... ok
+test_sample_counts (test_main.SimulatorTests.test_sample_counts) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.099s
+
+OK

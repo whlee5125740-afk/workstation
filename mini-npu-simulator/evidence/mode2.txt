@@ -1,0 +1,26 @@
+=== Mini NPU Simulator ===
+
+필터 로드
+size_5: Cross, X 로드 완료
+size_13: Cross, X 로드 완료
+size_25: Cross, X 로드 완료
+
+패턴 분석
+size_5_1 | Cross=1 X=9 | 0.004500 ms | 판정=X expected=X | PASS 
+size_5_2 | Cross=9 X=1 | 0.002700 ms | 판정=Cross expected=Cross | PASS 
+size_13_1 | Cross=1 X=25 | 0.010400 ms | 판정=X expected=X | PASS 
+size_13_2 | Cross=25 X=1 | 0.010400 ms | 판정=Cross expected=Cross | PASS 
+size_25_1 | Cross=1 X=49 | 0.036700 ms | 판정=X expected=X | PASS 
+size_25_2 | Cross=49 X=1 | 0.036400 ms | 판정=Cross expected=Cross | PASS 
+size_13_3 | Cross=0 X=0 | 0.010800 ms | 판정=UNDECIDED expected=X | FAIL 동점 규칙
+size_25_3 | Cross=4.8999999999999986 X=0.10000000000000001 | 0.035500 ms | 판정=Cross expected=Cross | PASS 
+
+성능 분석: 단일 MAC 호출 평균 / 1000회 (I/O·검증·평탄화 제외)
+크기       평균 시간(ms)    연산 횟수(N²)    1차원(ms)
+3x3           0.000409                9      0.000248
+5x5           0.000955               25      0.000577
+13x13         0.005248              169      0.003425
+25x25         0.017635              625      0.013401
+
+결과 요약: 총 8 / 통과 7 / 실패 1
+- size_13_3: 동점 규칙
